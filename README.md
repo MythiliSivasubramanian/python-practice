@@ -1,3 +1,12 @@
+![Python](https://img.shields.io/badge/Python-3.11-blue)&nbsp;&nbsp;
+![Status](https://img.shields.io/badge/Status-Learning-green)&nbsp;&nbsp;
+![Repo](https://img.shields.io/badge/Repository-Active-brightgreen)&nbsp;&nbsp;
+![Language](https://img.shields.io/badge/Language-English%20%2F%20German-yellow)&nbsp;&nbsp;
+![Platform](https://img.shields.io/badge/Platform-macOS-lightgrey)
+
+
+---
+
 # 🐍 Python Practice by Mythili Sivasubramanian
 
 Welcome to my **Python Learning Journey**! 👩‍💻✨  
@@ -49,3 +58,36 @@ My goal: to build strong foundations and move toward practical projects, automat
 ✨ *“Small steps daily become giant leaps over time.”* ✨  
 Thanks for visiting my repo! 😊  
 Feel free to explore, learn, or share ideas.
+
+---
+
+## ✅ Learning Progress Tracker
+
+Here’s my Python learning journey, tracked module by module!  
+Each module builds upon the previous one, from fundamentals to practical projects. 🚀
+
+| Module | Topic | Status | Key Concepts Covered |
+|---------|--------|---------|----------------------|
+| 🧩 **M1_Basics** | Variables, Input/Output, Simple Math | ✅ Completed | `print()`, `input()`, arithmetic operators |
+| ⚖️ **M2_IfElse** | Conditional Statements | ✅ Completed | `if`, `elif`, `else`, logical operators |
+| 🔁 **M3_Loops** | For & While Loops | ✅ Completed | `for`, `while`, `range()`, counters |
+| 📋 **M4_Lists** | Lists & Iterations | ✅ Completed | `append()`, `len()`, iteration, indexing |
+| 🧮 **M5_Functions** | Functions & Return Values | ✅ In Progress | `def`, `return`, parameters, unpacking |
+| 🧠 **M6_Memory_Logic** | Variable References & Memory | 🔜 Upcoming | Mutable vs Immutable, reference vs copy |
+| 💼 **M7_Projects** | Mini Projects | 🔜 Upcoming | Calculator, List Analyzer, Number Games |
+
+---
+
+### 🗓️ Current Focus:
+Improving foundations with functions and building small real-world projects.
+
+### 🎯 Next Goals:
+- Add more function challenges  
+- Start M7_Projects  
+- Document learning steps for each project  
+
+---
+
+> 🌸 *“Code a little every day — consistency beats speed.”*  
+> — Mythili Sivasubramanian
+
