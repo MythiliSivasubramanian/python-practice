@@ -37,7 +37,7 @@ I’m currently working on:
 - 📊 Dictionaries and tuples  
 - 🧠 Small projects (mini calculator, quiz, password generator, etc.)  
 - 🌐 Automation basics
-- 
+
 ---
 
 ## 💖 About This Repo
