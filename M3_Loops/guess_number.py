@@ -1,15 +1,20 @@
-# number guessing game
-secret_number = 7
-user_number = int(input("Welcome to number guessing Game.\nGuess the number from 1 to 10, which is in my mind : "))
+import random
 
-while secret_number != user_number:
-
-    if user_number > secret_number:
-        print("Too high. Try again")
-
-    elif user_number < secret_number:
-        print("too low. Try again")
-      
-    user_number = int(input("New number : "))
-  
-print("Congratulations, you guessed the number correctly ")
+secret_number = random.randint(1,20)
+attempts = 0
+print("Welcome to number guessing game")
+while True:
+    try:
+        user_input = int(input("Enter the secret number (1-20) : "))
+        attempts += 1
+        if user_input < 0 or user_input > 20:
+            print("Enter the number within the range (1- 20)")
+        elif user_input < secret_number:
+            print("Too low. Try again")
+        elif user_input > secret_number:
+            print("Too high. Try again")
+        else:
+            print(f"Correct! You guessed it in {attempts} attempts.")
+            break
+    except ValueError:
+        print("Enter a valid integer : ")
