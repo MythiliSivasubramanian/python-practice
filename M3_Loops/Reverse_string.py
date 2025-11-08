@@ -1,14 +1,8 @@
-# To Reverse a string
-def reverse_string(text):
-    reversed_text = ""  
-    i = len(text) - 1   
+# reverse the given string
 
-    while i >= 0:
-        reversed_text += text[i]
-        i -= 1
-    return reversed_text
+user_string = input("Enter the word or a string")
+reversed_string = ""
+for i in range(len(user_string)-1,-1,-1):
+   reversed_string += user_string[i]
 
-
-if __name__ == "__main__":
-    s = input("Enter a string: ")
-    print("Reversed string:", reverse_string(s))
+print("Reversed string is ",reversed_string)
