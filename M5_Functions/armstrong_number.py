@@ -3,7 +3,7 @@ import string
 
 # Function to check if its an Armstrong number
 def is_armstrong(number):
-    total,temp= 0,0
+    temp= 0
     no_digits = len(str(number))
     for i in str(number):
         temp += int(i)**no_digits
