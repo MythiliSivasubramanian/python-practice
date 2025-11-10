@@ -36,7 +36,8 @@ This repository contains all the Python programs I’ve written while learning s
 - 📋 Lists and indexing  
 - 🧩 Functions and return values  
 - ⚠️ Exception handling (`try` / `except`)  
-- 💬 f-strings and formatted printing  
+- 💬 f-strings and formatted printing
+- 📋 string formatting 
 
 ---
 
