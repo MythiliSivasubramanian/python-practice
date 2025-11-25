@@ -18,13 +18,17 @@ This repository contains all the Python programs I’ve written while learning s
 
 | Folder | Description |
 |---------|-------------|
-| `M1_Basics` | 🧩 Basic input/output, variables, and simple math. |
-| `M2_IfElse` | ⚖️ Conditional statements — learning `if`, `elif`, and `else`. |
-| `M3_Loops` | 🔁 Practice with `for` and `while` loops. |
-| `M4_Lists` | 📋 Working with lists — adding, removing, and iterating through items. |
-| `M5_Functions` | 🧮 Creating reusable functions with parameters and return values. |
-| `M6_Memory_Logic` | 🧠 Understanding variable references, copies, and how Python stores data in memory. |
-| `M7_Projects` | 💼 Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
+| `Basics` | 🧩 Basic input/output, variables, and simple math. |
+| `IfElse` | ⚖️ Conditional statements — learning `if`, `elif`, and `else`. |
+| `Loops` | 🔁 Practice with `for` and `while` loops. |
+| `Lists` | 📋 Working with lists — adding, removing, and iterating through items. |
+| `Functions` | 🧮 Creating reusable functions with parameters and return values. |
+| `Memory_Logic` | 🧩 Understanding various methods and functions on Strings |
+| `String_Pratice` | 🧠 Understanding variable references, copies, and how Python stores data in memory. |
+| `String_List` | 📋 Pratcie problems on various String and List datatypes. |
+| `Projects` | 💼 Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
+| `Ultility_Scripts` | 🌐 Various small programs on multiple Python ultilities . |
+
 
 
 ## 🧠 Concepts Covered So Far
@@ -69,13 +73,13 @@ Each module builds upon the previous one, from fundamentals to practical project
 
 | Module | Topic | Status | Key Concepts Covered |
 |---------|--------|---------|----------------------|
-| 🧩 **M1_Basics** | Variables, Input/Output, Simple Math | ✅ Completed | `print()`, `input()`, arithmetic operators |
-| ⚖️ **M2_IfElse** | Conditional Statements | ✅ Completed | `if`, `elif`, `else`, logical operators |
-| 🔁 **M3_Loops** | For & While Loops | ✅ Completed | `for`, `while`, `range()`, counters |
-| 📋 **M4_Lists** | Lists & Iterations | ✅ Completed | `append()`, `len()`, iteration, indexing |
-| 🧮 **M5_Functions** | Functions & Return Values | ✅ In Progress | `def`, `return`, parameters, unpacking |
-| 🧠 **M6_Memory_Logic** | Variable References & Memory | 🔜 Upcoming | Mutable vs Immutable, reference vs copy |
-| 💼 **M7_Projects** | Mini Projects | 🔜 Upcoming | Calculator, List Analyzer, Number Games |
+| 🧩 **Basics** | Variables, Input/Output, Simple Math | ✅ Completed | `print()`, `input()`, arithmetic operators |
+| ⚖️ **IfElse** | Conditional Statements | ✅ Completed | `if`, `elif`, `else`, logical operators |
+| 🔁 **Loops** | For & While Loops | ✅ Completed | `for`, `while`, `range()`, counters |
+| 📋 **Lists** | Lists & Iterations | ✅ Completed | `append()`, `len()`, iteration, indexing |
+| 🧮 **Functions** | Functions & Return Values | ✅ In Progress | `def`, `return`, parameters, unpacking |
+| 🧠 **Memory_Logic** | Variable References & Memory | 🔜 Upcoming | Mutable vs Immutable, reference vs copy |
+| 💼 **Projects** | Mini Projects | 🔜 Upcoming | Calculator, List Analyzer, Number Games |
 
 ---
 
