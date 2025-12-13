@@ -1,98 +1,76 @@
-![Python](https://img.shields.io/badge/Python-3.11-blue)&nbsp;&nbsp;
-![Status](https://img.shields.io/badge/Status-Learning-green)&nbsp;&nbsp;
-![Repo](https://img.shields.io/badge/Repository-Active-brightgreen)&nbsp;&nbsp;
-![Language](https://img.shields.io/badge/Language-English%20%2F%20German-yellow)&nbsp;&nbsp;
-![Platform](https://img.shields.io/badge/Platform-macOS-lightgrey)
-
 
 ---
 
-# 🐍 Python Practice by Mythili Sivasubramanian
+#  Python Practice by Mythili Sivasubramanian
 
-Welcome to my **Python Learning Journey**! 👩‍💻✨  
+Welcome to my **Python Learning Journey**! 
 This repository contains all the Python programs I’ve written while learning step-by-step — from basic syntax to advanced logic, with plenty of examples and practice challenges.
 
 ---
 
-## 📚 Folder Structure
+## Folder Structure
 
 | Folder | Description |
 |---------|-------------|
-| `Basics` | 🧩 Basic input/output, variables, and simple math. |
-| `IfElse` | ⚖️ Conditional statements — learning `if`, `elif`, and `else`. |
-| `Loops` | 🔁 Practice with `for` and `while` loops. |
-| `Lists` | 📋 Working with lists — adding, removing, and iterating through items. |
-| `Functions` | 🧮 Creating reusable functions with parameters and return values. |
-| `Memory_Logic` | 🧩 Understanding various methods and functions on Strings |
-| `String_Pratice` | 🧠 Understanding variable references, copies, and how Python stores data in memory. |
-| `String_List` | 📋 Pratcie problems on various String and List datatypes. |
-| `Projects` | 💼 Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
-| `Ultility_Scripts` | 🌐 Various small programs on multiple Python ultilities . |
+| `Basics` | Basic input/output, variables, and simple math. |
+| `IfElse` | Conditional statements — learning `if`, `elif`, and `else`. |
+| `Loops` |  Practice with `for` and `while` loops. |
+| `Lists` |  Working with lists — adding, removing, and iterating through items. |
+| `Functions` |  Creating reusable functions with parameters and return values. |
+| `Memory_Logic` |  Understanding various methods and functions on Strings |
+| `String_Pratice` |  Understanding variable references, copies, and how Python stores data in memory. |
+| `String_List` |  Pratcie problems on various String and List datatypes. |
+| `Projects` |  Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
+| `Ultility_Scripts` |  Various small programs on multiple Python ultilities . |
 
 
 
-## 🧠 Concepts Covered So Far
-- 🏁 Input / Output and variables  
-- 🔢 Data types and typecasting  
-- ➕ Arithmetic and comparison operators  
-- ⚙️ Conditional statements (`if`, `elif`, `else`)  
-- 🔁 Loops (`for`, `while`)  
-- 📋 Lists and indexing  
-- 🧩 Functions and return values  
-- ⚠️ Exception handling (`try` / `except`)  
-- 💬 f-strings and formatted printing
-- 📋 string formatting 
+##  Concepts Covered So Far
+-  Input / Output and variables  
+-  Data types and typecasting  
+-  Arithmetic and comparison operators  
+-  Conditional statements (`if`, `elif`, `else`)  
+-  Loops (`for`, `while`)  
+-  Lists and indexing  
+-  Functions and return values  
+-  Exception handling (`try` / `except`)  
+-  f-strings and formatted printing
+-  string formatting 
 
 ---
 
-## 🌟 Next Steps
+##  Next Steps
 I’m currently working on:
-- 🧮 List operations and comprehension  
-- 📊 Dictionaries and tuples  
-- 🧠 Small projects (mini calculator, quiz, password generator, etc.)  
-- 🌐 Automation basics
+-  List operations and comprehension  
+-  Dictionaries and tuples  
+-  Small projects (mini calculator, quiz, password generator, etc.)  
+-  Automation basics
 
 ---
 
-## 💖 About This Repo
+##  About This Repo
 This repository serves as my **learning log and practice ground** for mastering Python fundamentals from scratch.  
 My goal: to build strong foundations and move toward practical projects, automation, and data analysis.
 
 ---
 
-✨ *“Small steps daily become giant leaps over time.”* ✨  
+ *“Small steps daily become giant leaps over time.”* 
 Thanks for visiting my repo! 😊  
 Feel free to explore, learn, or share ideas.
 
 ---
 
-## ✅ Learning Progress Tracker
 
-Here’s my Python learning journey, tracked module by module!  
-Each module builds upon the previous one, from fundamentals to practical projects. 🚀
-
-| Module | Topic | Status | Key Concepts Covered |
-|---------|--------|---------|----------------------|
-| 🧩 **Basics** | Variables, Input/Output, Simple Math | ✅ Completed | `print()`, `input()`, arithmetic operators |
-| ⚖️ **IfElse** | Conditional Statements | ✅ Completed | `if`, `elif`, `else`, logical operators |
-| 🔁 **Loops** | For & While Loops | ✅ Completed | `for`, `while`, `range()`, counters |
-| 📋 **Lists** | Lists & Iterations | ✅ Completed | `append()`, `len()`, iteration, indexing |
-| 🧮 **Functions** | Functions & Return Values | ✅ In Progress | `def`, `return`, parameters, unpacking |
-| 🧠 **Memory_Logic** | Variable References & Memory | 🔜 Upcoming | Mutable vs Immutable, reference vs copy |
-| 💼 **Projects** | Mini Projects | 🔜 Upcoming | Calculator, List Analyzer, Number Games |
-
----
-
-### 🗓️ Current Focus:
+###  Current Focus:
 Improving foundations with functions and building small real-world projects.
 
-### 🎯 Next Goals:
+###  Next Goals:
 - Add more function challenges  
 - Start M7_Projects  
 - Document learning steps for each project  
 
 ---
 
-> 🌸 *“Code a little every day — consistency beats speed.”*  
+>  *“Code a little every day — consistency beats speed.”*  
 > — Mythili Sivasubramanian
 
