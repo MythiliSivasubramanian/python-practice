@@ -18,10 +18,10 @@ This repository contains all the Python programs I’ve written while learning s
 | `Lists` |  Working with lists — adding, removing, and iterating through items. |
 | `Functions` |  Creating reusable functions with parameters and return values. |
 | `Memory_Logic` |  Understanding various methods and functions on Strings |
-| `String_Pratice` |  Understanding variable references, copies, and how Python stores data in memory. |
+| `String_Practice` |  Understanding variable references, copies, and how Python stores data in memory. |
 | `String_List` |  Pratcie problems on various String and List datatypes. |
 | `Projects` |  Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
-| `Ultility_Scripts` |  Various small programs on multiple Python ultilities . |
+| `Utility_Scripts` |  Various small programs on multiple Python ultilities . |
 
 
 
