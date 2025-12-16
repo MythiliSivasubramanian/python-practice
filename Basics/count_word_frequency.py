@@ -1,5 +1,6 @@
+#Get the sentence as a string and print the total occurances of each word 
 def word_frequency(sentence):
-    """Return a dictionary with word counts."""
+
     freq = {}
     words = sentence.lower().split()
 
@@ -8,4 +9,11 @@ def word_frequency(sentence):
 
     return freq
 
-print(word_frequency("Python is easy and python is powerful"))
+# Get the input
+user_input = input("Enter a Sentence to count each word frequency : ")
+
+# Call the fun(). Pass input and assign return value to word_count
+word_count = word_frequency(user_input)
+
+# Print result
+print(word_count)
