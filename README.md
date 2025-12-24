@@ -14,7 +14,7 @@ This repository contains all the Python programs I’ve written while learning s
 |---------|-------------|
 | `Basics` | Basic input/output, variables, and simple math. |
 | `IfElse` | Conditional statements — learning `if`, `elif`, and `else`. |
-| `Dictionaries` |  Creation — Adding / Updating elements, Accessing Elements — Deleting/ pop - Fundamentals, Copying, Adavntages, disadvantages  |
+| `Dictionaries` |  Creation — Adding / Updating elements, Accessing Elements — Deleting - Fundamentals, Copying, nested dictionaries, Adavntages, disadvantages  |
 | `Loops` |  Practice with `for` and `while` loops. |
 | `Lists` |  Working with lists — adding, removing, and iterating through items. |
 | `Functions` |  Creating reusable functions with parameters and return values. |
@@ -36,7 +36,8 @@ This repository contains all the Python programs I’ve written while learning s
 -  Functions and return values  
 -  Exception handling (`try` / `except`)  
 -  f-strings and formatted printing
--  string formatting 
+-  string formatting
+-  Dictionaries
 
 ---
 
