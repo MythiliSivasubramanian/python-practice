@@ -1,11 +1,11 @@
 # Find duplicate values in a list
 
 def find_duplicates(nums):
-    seen = []
-    duplicates = []
+    seen = []  # stores numbers already encountered
+    duplicates = []  # stores duplicate values (without repetition)  
 
     for n in nums:
-        if n in seen and n not in duplicates:
+        if n in seen and n not in duplicates:  # if number is already seen and not yet marked as duplicate
             duplicates.append(n)
         else:
             seen.append(n)
