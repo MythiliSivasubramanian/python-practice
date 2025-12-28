@@ -1,6 +1,10 @@
 """
-Practice: list comprehension, zip, enumerate, and unzip
-Task: Product Price Analysis
+Practice: 
+- list comprehension
+- zip and unzip
+- enumerate
+- filtering data
+- formatting output with f-strings
 """
 
 # Predefined lists
