@@ -2,9 +2,10 @@
 def word_frequency(sentence):
 
     freq = {}
-    words = sentence.lower().split()
+    words = sentence.lower().split() # Converted all cases of word to lower 
 
     for w in words:
+         # increment count if word exists, otherwise start from 1
         freq[w] = freq.get(w, 0) + 1
 
     return freq
