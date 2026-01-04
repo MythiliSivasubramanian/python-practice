@@ -1,6 +1,7 @@
 """ Given a string, remove all duplicate characters while keeping only the first occurrence of each character.
 Sample Input: bananas.  Sample Output: bans """
 
+from collections import OrderedDict
 
 user_input = input("Enter a Word : ")
 

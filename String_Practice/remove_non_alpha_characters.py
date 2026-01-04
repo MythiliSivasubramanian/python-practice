@@ -1,4 +1,4 @@
-1""" Convert "23°C" to "23C" (remove non-alphabetic characters like °). Sample Input: "23°C"  Sample Output: 23C """
+""" Convert "23°C" to "23C" (remove non-alphabetic characters like °). Sample Input: "23°C"  Sample Output: 23C """
 import re
 
 user_input = input("Enter a word with non - alphabetic characters eg 23°C : ")

@@ -1,3 +1,4 @@
+# Convert the temperature from celsicus to fahrenheit and kelvin
 def convert_temperatures(celsius):
     fahrenheit = (celsius * 9/5) + 32
     kelvin = celsius + 273.15
@@ -5,7 +6,7 @@ def convert_temperatures(celsius):
 
 
 print("=== Celsius to Fahrenheit & Kelvin Converter ===")
-
+# try untill the user like to exit the program
 while True:
     try:
         c = float(input("Enter temperature in Celsius: "))
