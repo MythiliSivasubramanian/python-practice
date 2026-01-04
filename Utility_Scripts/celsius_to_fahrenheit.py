@@ -1,3 +1,4 @@
+# Convert the temperature from celsicus to fahrenheit and kelvin
 def convert_temperatures(celsius):
     fahrenheit = (celsius * 9/5) + 32
     kelvin = celsius + 273.15
