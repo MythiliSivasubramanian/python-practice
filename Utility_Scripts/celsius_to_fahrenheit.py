@@ -6,7 +6,7 @@ def convert_temperatures(celsius):
 
 
 print("=== Celsius to Fahrenheit & Kelvin Converter ===")
-
+# try untill the user like to exit the program
 while True:
     try:
         c = float(input("Enter temperature in Celsius: "))
