@@ -1,6 +1,17 @@
+"""
+Nested Dictionary:
+- Creating a nested dictionary
+- Updating exsisting values in nested dictionary
+- Modifying values in outer dictionary
+- Adding new key - value pairs in inner dictionary
+"""
+
+#  Creating a nested dictionary
 student = {"name": "Rose", "marks": {"math": 90, "cs": 95}}
 print(f"\nNested Dictionary : {student}\n")
 
+
+# Updating values in nested dictionary
 # Updating math marks from 90 → 98 (nested dictionary)
 student["marks"]["math"] = 98
 print(
@@ -9,6 +20,8 @@ print(
 )
 print(student)
 
+
+# Updating values in outer dictionary
 # Updating the value of key 'name' in outer dictionary
 student["name"] = "Rose Sharma"
 print(
@@ -17,6 +30,9 @@ print(
 )
 print(student)
 
+
+
+# Adding a new Key value pair in inner dictionary
 # Adding a new key-value pair inside inner dictionary
 student["marks"]["physics"] = 88
 print(
@@ -25,44 +41,57 @@ print(
 )
 print(student)
 
+
+# Updating multiple keys in inner dict using .update()
 # Updating multiple keys inside "marks" using .update() updating "cs" to 99 and "physics" to 92
 student["marks"].update(cs=99, physics=92)
 print(student)
 
-# Adding the inner dictionary key 'address' - 'city' : 'Berlin', 'country' : 'germany'
-# Method 1 : Create the inner dictionary first and then add
+
+# Adding a new inner dictionary
+# Adding a new inner dictionary key 'address' - 'city' : 'Berlin', 'country' : 'Germany' 
+# Method 1 : Create an empty inner dictionary first and then add keys
 student["address"] = {}
-student["address"]["city"] = "berlin"
-student["address"]["country"] = "germany"
-print("\nMethod 1: \nAdding the inner dictionary key 'address' - 'city' : 'Berlin', 'country' : 'germany' : \nstudent['address'] = {}\nstudent['address']['city'] = 'berlin'\nstudent['address']['country'] = 'germany' : \n",student)
+student["address"]["city"] = "Berlin"
+student["address"]["country"] = "Germany"
+print("\nMethod 1: \nAdding the inner dictionary key 'address' - 'city' : 'Berlin', 'country' : 'Germany' : \nstudent['address'] = {}\nstudent['address']['city'] = 'Berlin'\nstudent['address']['country'] = 'Germany' : \n",student)
 
-# Method 2:
-student["Address"] = {"stadt":"München","Land" : "Deutschland"}
-print("\nMethod 2: \nAdding the inner dictionary key 'Address' - 'stadt' : 'München', 'Land' : 'Deutschland' : \nstudent['Address'] = {'stadt':'München','Land' : 'Deutschland'} : \n",student)
 
-# Method 1: using = : Updating 'city' inside 'address' from 'berlin' to 'Hamburg'
+# Method 2: Adding inner dictionary directly
+student["address"] = {"stadt":"München","Land" : "Deutschland"}
+print("\nMethod 2: \nAdding the inner dictionary key 'address' - 'stadt' : 'München', 'Land' : 'Deutschland' : \nstudent['address'] = {'stadt':'München','Land' : 'Deutschland'} : \n",student)
+
+
+# Updating inner dictionary values
+# Method 1: using = : Updating 'city' inside 'address' from 'Berlin' to 'Hamburg'using assignment and []
 student["address"]["city"] = "Hamburg"
-print("\nUpdating 'city' inside 'address' from 'berlin' to 'Hamburg': \nMethod 1: using = : \nstudent['address']['city'] = 'Hamburg' \n",student)
+print("\nUpdating 'city' inside 'address' from 'Berlin' to 'Hamburg': \nMethod 1: using = : \nstudent['address']['city'] = 'Hamburg' \n",student)
 
 
-# Method 2: using update() Updating 'stadt' inside 'address' from 'München' to 'stuttgart'
-student["Address"].update(stadt = "stuttgart")
+# Method 2: using update(): Updating 'stadt' inside 'address' from 'München' to 'stuttgart'
+student["address"].update(stadt = "stuttgart")
 print("\n\nMethod 2:\nusing update()\nUpdating 'stadt' inside 'address' from 'München' to 'stuttgart' : \n",student)
 
 
-# Updating 'pincode' if 'address' exsists. using .get()
+
+# Safe updating using .get()
+# Add 'pincode' only if 'address' exists. using .get()
 if student.get("address") is not None:
     student["address"]["pincode"] = 12345
     
-print("\nUpdating 'pincode' if 'address' exsists. using .get() : \nsteps: if student.get('address') is not None:\n\t student[address][pincode] = 12345 \n",student)
+print("\nAdding 'pincode' only if 'address' exists. using .get() : \nsteps: if student.get('address') is not None:\n\t student[address][pincode] = 12345 \n",student)
 
-# Removing 'physics' key safely using .pop()
+
+# Removing values from inner dictionary
+# Removing key 'physics' safely using .pop()
 removed_value = student["marks"].pop("physics", None)
 print("\nRemoving 'physics' key from 'marks' using .pop() if it exists")
 print("Removed value:", removed_value)
 print("Updated student dictionary:\n", student)
 
-# Clearing the inner dictionary 'Address' using .clear()
-student["Address"].clear()
-print("\nClearing the inner dictionary 'Address' using .clear()")
+
+
+# Clearing the inner dictionary 'address' using .clear()
+student["address"].clear()
+print("\nClearing the inner dictionary 'address' using .clear()")
 print("Updated student dictionary:\n", student)

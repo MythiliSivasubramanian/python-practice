@@ -4,14 +4,14 @@ Sample Output: {'Python': 2, 'is': 2, 'fun': 1, 'and': 1, 'powerful': 1} """
 
 
 # Get the input and split into a list based on spaces
-my_string = input("Enter a sentence to count the words frequency: ").split()
+my_string = input("\nEnter a sentence to count the words frequency: ").split()
 
-# Create an empty dictionary
+# Create an empty dictionary to store word counts
 word_frequency = {}
 
-# Count each word
+# Count each word from the input
 for word in my_string:
     word_frequency[word] = word_frequency.get(word, 0) + 1
 
 # Print the frequency dictionary
-print(word_frequency)
+print("\nWord freqency dictionary : \n",word_frequency)

@@ -8,6 +8,7 @@ students = {"Alice": {"math": 85, "science": 90}, "Bob": {"math": 70, "science":
 # New dictionary to store results with score as pass or fail
 result = {}
 
+# Using nested for loops
 # Outer loop: student name and respective subject dictionary
 for name, inner_dict in students.items():
     # creating inner dictionary for each student

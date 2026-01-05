@@ -1,3 +1,18 @@
+"""
+Nested dictionary : Access, validation & Iteration
+- Accessing outer dictionary keys using [] and get()
+- Accessing inner dictionary keys safely
+- Handling missing keys safely
+_ Checking key exsistence using membership in operator
+- Iterating over keys, values, key value pairs in a nested dictionary.
+
+Expection:
+- To print correct values for the exsisting keys
+- To handle missing or non exsisting keys safely
+- Inner directionary traversal
+
+"""
+
 # Creating a nested dictionary
 student = {
     "name": "Rose",
@@ -6,57 +21,57 @@ student = {
         "cs": 95
     }
 }
-
 print("\nNested Dictionary:")
 print(student)
 
-# Task 1: Access outer key
-print("\nTask 1: Access outer key 'name'")
+
+# Accessing outer key
+print("\n1: Access outer key 'name'")
 print("student['name'] :", student["name"])
 print("student.get('name') :", student.get("name", "Not Found"))
 
-# Task 2: Access inner key
-print("\nTask 2: Access inner key 'math'")
+# Accessing inner key
+print("\n2: Access inner key 'math'")
 print("student['marks']['math'] :", student["marks"]["math"])
 print("student.get('marks').get('math') :", student.get("marks").get("math", "Not Found"))
 
-# Task 3: Access another inner key
-print("\nTask 3: Access inner key 'cs'")
+# Accessing another inner key
+print("\n3: Access inner key 'cs'")
 print("student['marks']['cs'] :", student["marks"]["cs"])
 print("student.get('marks').get('cs') :", student.get("marks").get("cs"))
 
-# Task 4: Access missing inner key safely
-print("\nTask 4: Access missing key 'physics'")
+# Accessing missing or non exsisting inner key safely
+print("\n4: Access missing key 'physics'")
 print(
     "student.get('marks').get('physics') :",
     student.get("marks").get("physics", "Key not found")
 )
 
-# Task 5: Check key existence
-print("\nTask 5: Check key existence")
+# Checking key existence 
+print("\n5: Check key existence")
 print("'name' in student :", "name" in student)
 print("'math' in student['marks'] :", "math" in student["marks"])
 
-# Task 6: Check non-existent key
-print("\nTask 6: Check non-existent key 'physics'")
+# Checking non-existent key
+print("\n6: Check non-existent key 'physics'")
 print("'physics' in student['marks'] :", "physics" in student["marks"])
 
-# Task 7: Print all keys in inner dictionary
-print("\nTask 7: Print all keys in marks dictionary")
+# Printing all keys in inner dictionary
+print("\n7: Print all keys in marks dictionary")
 for key in student["marks"]:
     print(key)
 
-# Task 8: Print all values in inner dictionary
-print("\nTask 8: Print all values in marks dictionary")
+# Printing all values in inner dictionary
+print("\n8: Print all values in marks dictionary")
 for val in student["marks"].values():
     print(val)
 
-# Task 9: Print all key-value pairs
-print("\nTask 9: Print key-value pairs in marks dictionary")
+# Printing all key-value pairs
+print("\n9: Print key-value pairs in marks dictionary")
 for key, val in student["marks"].items():
     print(key, val)
 
-# Task 10: Check both outer and inner keys
-print("\nTask 10: Check both outer and inner keys")
+# Checking both outer and inner keys
+print("\n 10: Check both outer and inner keys")
 print("'marks' in student :", "marks" in student)
 print("'cs' in student['marks'] :", "cs" in student["marks"])

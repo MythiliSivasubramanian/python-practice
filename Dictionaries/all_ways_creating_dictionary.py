@@ -1,3 +1,14 @@
+"""
+Python Dictionary Creation:
+Multiple ways to create dictionaries in Python:
+- Empty dictionaries using {} and dict()
+- With initial values using {} and dict()
+- From pairs (list of tuples)
+- Using dictionary comprehension
+"""
+
+
+import sys
 # Method 1: Creating an empty dictionary using {}
 dict_1 = {}
 print(f"dict_1 : {dict_1} | Type: {type(dict_1)} | Memory: {sys.getsizeof(dict_1)} bytes")
