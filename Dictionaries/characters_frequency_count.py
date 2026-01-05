@@ -1,9 +1,10 @@
 # Count the frequency of each characters (including spaces) from the given string input
 
 # Get the input
-text = input("Enter a string to count frequency of each character : ")
+text = input("\nEnter a string to count frequency of each character : ")
 
-# Create a empty dict() to store charcters and thier occurences as pairs
+# Create a empty dict() to store characters and thier occurences as pairs
+# Dictionary is used since duplication in keys arent allowed
 count = {}
 
 # Read each char from the string and char as key and its count as value in count{}
