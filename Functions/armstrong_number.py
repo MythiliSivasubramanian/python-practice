@@ -1,4 +1,14 @@
-# Armstrong number
+"""
+Armstrong number checker : 
+Armstrong number is a number that equals the sum of its own digits, 
+each raised to the power of the total number of digits in the number. 
+Ex. 153 : 3 digits : (1^3 + 5^3+ 3^3 =1 + 125 + 27 = 153). 
+- Checks if the user's input is a Armstrong number.
+- Input validation
+- Allows to check the numbers for multiple times
+"""
+
+
 import string
 
 # Function to check if its an Armstrong number
@@ -7,6 +17,7 @@ def is_armstrong(number):
     no_digits = len(str(number))
     for i in str(number):
         temp += int(i)**no_digits
+        # Return True if number is Armstrong, else False
     if temp == number:
         return True
     else:
@@ -15,9 +26,9 @@ def is_armstrong(number):
  # Function to print the results
 def print_result(num,states):
     if states:
-        print(f"{num} is an Armstrong number! ")
+        print(f"\n{num} is an Armstrong number! ")
     else:
-        print(f"{num} is not an Armstrong number!")
+        print(f"\n{num} is not an Armstrong number!")
 
 # Prompt and validate the user input
 def prompt_validate_input(prompt):
@@ -26,11 +37,11 @@ def prompt_validate_input(prompt):
             user_number = int(input(prompt))
             return user_number
         except ValueError:
-            print("Invalid input! Enter a valid number")
+            print("\nInvalid input! Enter a valid number\n")
 
 # Defining the main function
 def main():
-    prompt_text = "Enter a number to check if its an Armstrong number : "
+    prompt_text = "\nEnter a number to check if its an Armstrong number : "
     # Prompt and validate the input
     user_input = prompt_validate_input(prompt_text)
 
@@ -43,13 +54,13 @@ def main():
     # Choice to check another number
     choice = input("Would you like to check another number? (yes/no) : ").strip().lower().strip(string.whitespace + string.punctuation)
 
-    # Loop for multiple inputs
+    # Ask if user wants to check another number
     while choice =="yes":
         user_input = prompt_validate_input(prompt_text)
         result_state = is_armstrong(user_input)
         print_result(user_input, result_state)
-        choice = input("Would you like to check another number? (yes/no) : ").strip().lower().strip(string.whitespace + string.punctuation)
-    print("Thank you and Good day!")
+        choice = input("\nWould you like to check another number? (yes/no) : ").strip().lower().strip(string.whitespace + string.punctuation)
+    print("\nThank you and Good day!")
 
 # Call the main ()
 if __name__=="__main__":
