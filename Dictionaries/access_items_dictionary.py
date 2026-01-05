@@ -1,3 +1,14 @@
+"""
+Dictionary:
+- Adding key-value pairs to a dictionary
+- Updating existing keys
+- Accessing dictionary elements safely using [] and get()
+"""
+# Creating an empty dictionary
+my_dict = {}
+
+# Adding a key-Value pairs using [] and update()
+# update() is used for updating multiple keys at once
 my_dict["name"] = "Micky"
 
 # Adding multiple keys and values using update()
