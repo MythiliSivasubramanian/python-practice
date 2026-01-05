@@ -1,14 +1,29 @@
+"""
+Simple To-Do List
+
+Features:
+1. Add multiple tasks at once
+2. View all tasks with indices
+3. Remove a task by index
+4. Quit
+"""
+
+
+
 # Function first
 def user_operations(request):
-    if request == 1:
+    if request == 1: 
+        # Add tasks
         new_tasks = input("Enter the tasks separated by comma : ").split(",")
         all_tasks.extend(new_tasks)
         print("Updated tasks List: ", all_tasks)
 
     elif request == 2:
+        # View tasks
         print("Tasks List: ", all_tasks)
 
     elif request == 3:
+        # remove tasks
         task_index = int(input("Enter the index of the task to be removed: "))
         if 0 <= task_index < len(all_tasks):
             removed = all_tasks.pop(task_index)
