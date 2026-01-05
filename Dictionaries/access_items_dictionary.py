@@ -7,7 +7,7 @@ Dictionary:
 # Creating an empty dictionary
 my_dict = {}
 
-# Adding a key-value pairs using [] and update()
+# Adding a key-Value pairs using [] and update()
 # update() is used for updating multiple keys at once
 my_dict["name"] = "Micky"
 my_dict.update(age=22, language="English, German")
