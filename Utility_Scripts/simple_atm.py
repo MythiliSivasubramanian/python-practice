@@ -1,11 +1,31 @@
+"""
+Simple ATM Program :
+
+Allows the user to:
+1. Deposit money
+2. Withdraw money
+3. Check current balance
+4. Exit the program
+
+Concepts used:
+- Functions
+- While loop
+- Conditional statements
+- Exception handling
+- User input validation
+"""
+
+# Initial account balance
 balance = 0.0
 
+# Function to display the ATM menu options to the user.
 def show_menu():
     print("\n=== Simple ATM ===")
     print("1. Deposit")
     print("2. Withdraw")
     print("3. Check Balance")
     print("4. Exit")
+
 
 while True:
     show_menu()

@@ -1,6 +1,22 @@
+"""
+Password Strength Checker :
+Evaluates the strength of a password based on:
+- Minimum length (8 characters)
+- Digits
+- Uppercase letters
+- Lowercase letters
+- Special characters
+Based on these, the password is classified as: Strong, Medium, or Weak.
+"""
+
 import string
 
 def password_strength(password):
+    """
+    Evaluate the strength of a password.
+    Returns strength level of the password. Strong,Medium or weak
+    """
+            
     length_ok = len(password) >= 8
     digit_ok = any(char.isdigit() for char in password)
     upper_ok = any(char.isupper() for char in password)
