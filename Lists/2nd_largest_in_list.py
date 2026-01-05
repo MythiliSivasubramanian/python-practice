@@ -1,4 +1,5 @@
-"""Find the second largest number in a list. Sample Input: [4, 7, 1, 9, 5] Sample Output: Second largest: 7 """
+"""Find the second largest number in a list. 
+Sample Input: [4, 7, 1, 9, 5] Sample Output: Second largest: 7 """
 
 
 def find_second_largest(nums):
