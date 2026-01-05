@@ -1,8 +1,27 @@
-# A simple expenses tracker to add, view expenses, total and quit
+"""
+Simple Expense Tracker: 
+Allows the user to:
+- Add daily expenses
+- View all recorded expenses
+- View the total amount spent
+- Exit the application
 
+Concepts used:
+- Lists
+- Functions
+- Loops
+- Exception handling
+- User input validation
+"""
+
+# List to store expenses as [name, amount]
 expenses = []
 
 def add_expense():
+    """
+    Add a new expense to the tracker.
+    The user enters the expense name and amount separated by a comma.
+    """
     try:
         entry = input("Enter expense and amount separated by comma (e.g. Coffee, 3.5): ")
         name, amount = entry.split(",")
@@ -13,7 +32,7 @@ def add_expense():
     except ValueError:
         print("Invalid input! Please enter data in the format: name, amount")
 
-
+# Display all recorded expenses.
 def view_expenses():
     if not expenses:
         print("No expenses recorded yet.")
@@ -23,7 +42,7 @@ def view_expenses():
             print(f"{i}. {name} - €{amount}")
         print()  # extra line for neat spacing
 
-
+# Calculate and display the total amount spent.
 def view_total():
     if not expenses:
         print("No expenses to total yet.")
@@ -31,6 +50,7 @@ def view_total():
         total = sum(amount for _, amount in expenses)
         print(f"Total spent: €{total:.2f}")
 
+# Main program loop
 while True:
     print("\nExpense Tracker Menu")
     print("1. Add expense")
