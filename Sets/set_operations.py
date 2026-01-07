@@ -6,8 +6,13 @@ Python Set Operations
 - Symmetric difference
 
 What is expected:
+<<<<<<< HEAD
 - Understand mathematical set operations
 - Learn multiple ways to perform the same operation
+=======
+- Understanding mathematical set operations
+- Learning multiple ways to perform the same operation
+>>>>>>> c1775333139e66f3cc8415a465fc97185de9fb4d
 """
 
 A = {1, 2, 3}

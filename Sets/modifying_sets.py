@@ -8,8 +8,13 @@ Python Modifying Sets
 - pop()
 
 What is expected:
+<<<<<<< HEAD
 - Understand how sets change in-place
 - Learn safe vs unsafe removal methods
+=======
+- Understanding how sets change in-place
+- Learning safe vs unsafe removal methods
+>>>>>>> c1775333139e66f3cc8415a465fc97185de9fb4d
 """
 
 s = {1, 2, 3}
