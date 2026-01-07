@@ -5,7 +5,7 @@ Python Sets Basics
 - Removing duplicates using sets
 - Membership checking
 
--  To Understand that sets store UNIQUE values
+-  Understanding that sets store UNIQUE values
 - basic set operations and behavior
 """
 

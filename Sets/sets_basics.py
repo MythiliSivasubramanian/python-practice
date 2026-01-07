@@ -4,7 +4,6 @@
 - Remove one number
 Goal: Understand uniqueness and basic methods
 """
-
 # Creating a Set with 5 numbers
 numbers_set = {1, 2, 3, 4, 5}
 print("Printing the set:", numbers_set)

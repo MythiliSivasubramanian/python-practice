@@ -1,4 +1,4 @@
-# Creating Sets
+# Differnent ways to create a  Set
 
 # Creating sets normally
 print("\nCreating sets normally :")
