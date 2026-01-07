@@ -19,6 +19,7 @@ This repository contains all the Python programs I’ve written while learning s
 | `Lists` |  Working with lists — adding, removing, and iterating through items. |
 | `Functions` |  Creating reusable functions with parameters and return values. |
 | `Memory_Logic` |  Understanding various methods and functions on Strings |
+| `Sets` |  Fundamentals | Set Operations  | Set comprehensions  | Frozenset (immutable sets)  | Performance comparisons (list vs set)  |
 | `String_Practice` |  Understanding variable references, copies, and how Python stores data in memory. |
 | `String_List` |  Pratcie problems on various String and List datatypes. |
 | `Projects` |  Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
@@ -43,9 +44,9 @@ This repository contains all the Python programs I’ve written while learning s
 
 ##  Next Steps
 I’m currently working on:
--  List operations and comprehension  
--  Dictionaries and tuples  
--  Small projects (mini calculator, quiz, password generator, etc.)  
+-  Sets
+-  Tuples  
+-  File Handling 
 -  Automation basics
 
 ---
