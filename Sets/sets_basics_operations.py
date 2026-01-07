@@ -5,7 +5,11 @@ Python Sets Basics
 - Removing duplicates using sets
 - Membership checking
 
+<<<<<<< HEAD
 -  Understanding that sets store UNIQUE values
+=======
+-  To Understand that sets store UNIQUE values
+>>>>>>> 276e3cb (Merge commit 'd986fde89a475ec9974c4205f4b8054130be024e')
 - basic set operations and behavior
 """
 

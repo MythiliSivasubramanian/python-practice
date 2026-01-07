@@ -8,8 +8,13 @@ Python Modifying Sets
 - pop()
 
 What is expected:
+<<<<<<< HEAD
 - Understanding how sets change in-place
 - Learning safe vs unsafe removal methods
+=======
+- Understand how sets change in-place
+- Learn safe vs unsafe removal methods
+>>>>>>> 276e3cb (Merge commit 'd986fde89a475ec9974c4205f4b8054130be024e')
 """
 
 s = {1, 2, 3}
