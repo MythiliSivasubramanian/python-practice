@@ -79,11 +79,12 @@ Solution Approach:
 
 Python Concepts used:
 
-1.	Lists for raw data storage
-2.	Sets for duplicate removal
-3.	Dictionaries for structured mapping
-4.	String methods for normalization
-5.	enumerate for roll number assignment
+1.	File Handling (Open, read, write)
+2.  Lists for raw data storage
+3.	Sets for duplicate removal
+4.	Dictionaries for structured mapping
+5.	String methods for normalization
+6.	enumerate for roll number assignment
 
 
 How to Run the Project:
