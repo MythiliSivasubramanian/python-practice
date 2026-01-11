@@ -1,11 +1,10 @@
-import linecache
 
-# Opening the raw student data file
-f = open("/Users/aravinthmythili/Desktop/Github_Mythili_Sivasubramanian/python-practice/My_projects/raw_data.csv")
-header = (f.readline())
-data = f.readlines()
-print(header)
-print("\n\n",data[2:4])
+# Skip headerline (1st line) and print till EoF
 
-lines = linecache.getline("/Users/aravinthmythili/Desktop/Github_Mythili_Sivasubramanian/python-practice/My_projects/raw_data.csv",2)
-print(lines)
+# Opening the raw student data file using:  with open() as f:
+# With open() as f automatically closes file after use
+with open("/Users/aravinthmythili/Desktop/Github_Mythili_Sivasubramanian/python-practice/My_projects/raw_data.csv") as f:
+    next(f) # Skips the 1st line : headerline
+    for line in f:    # Prints until EOF
+        print(line.strip())
+        
