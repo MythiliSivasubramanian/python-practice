@@ -1,6 +1,4 @@
-Project:    Smart Data Cleaner & Analyzer (Core Python)
-Date: 8 January 2026
-
+Project:    Smart Data Cleaner & Analyzer (Using Core Python without any frameworks & external libraries)
 
 Problem Statement:
 
@@ -11,9 +9,8 @@ This project focuses on cleaning a raw Student dataset using core Python, so tha
 
 What this Project does:
 
-1.	Reads the student raw data from a text file. The Raw file consist of 1000 records with the 
-    following fields Name, Subject, Marks, Year.
-    (Raw data file name: raw_data.txt) 
+1.	Reads the student raw data from a text file with comma separated values. The Raw file consist of 1000 records with the following fields Name, Subject, Marks, Year.
+(Raw data file name: raw_data.txt) 
     
 2.	Cleans and normalizes the data with consistent casing and removing unnecessary spaces. 
 
@@ -99,7 +96,7 @@ Requirements:
 
 Future Improvements:
 
-1.	Read data from CSV files
+1.	Read data from large CSV files
 2.	Add proper exception handling
 3.	Add unit tests
 4.	Support larger datasets efficiently.
