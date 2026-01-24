@@ -3,6 +3,7 @@
     - Skips empty lines
     - Strips leading/trailing whitespaces
     - Returns a list of raw record strings for further parsing
+    - Error message when file not found or other issues
 """
 
 
