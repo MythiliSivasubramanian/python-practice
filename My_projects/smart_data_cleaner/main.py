@@ -29,3 +29,33 @@ def read_raw_file(file_path):
         return []
 
     return records
+
+"""
+   Card 2:  Parses a single raw input line into structured fields.
+
+    What this function DOES:
+    - Splits the line using the given delimiter
+    - Trims extra whitespace from each field
+    - Ensures exactly `expected_fields` fields by padding with empty strings ("")
+    - Ignores extra fields anything beyond the expected count
+    - Returns: list[str]: A list of exactly `expected_fields` strings
+"""
+def parse_record(line, delimiter=",", expected_fields=4):
+  
+    # Handle empty or whitespace-only lines 
+    if not line or not line.strip():
+        return [""] * expected_fields
+
+    # Step 1: split by delimiter
+    fields = line.split(delimiter)
+
+    # Step 2: trim whitespace from each field
+    fields = [field.strip() for field in fields]
+
+    # Step 3: ensure fixed number of fields
+    if len(fields) < expected_fields:
+        fields.extend([""] * (expected_fields - len(fields)))
+    else:
+        fields = fields[:expected_fields]
+
+    return fields
