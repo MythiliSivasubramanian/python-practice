@@ -59,3 +59,55 @@ def parse_record(line, delimiter=",", expected_fields=4):
         fields = fields[:expected_fields]
 
     return fields
+def collapse_spaces(text):
+    """
+    Collapses multiple internal whitespace into a single space.
+    Also strips leading/trailing whitespace.
+    Example: "  John   Doe  " -> "John Doe"
+    """
+    if text is None:
+        return ""
+    return " ".join(text.split())
+
+"""
+Card 3: Normalize casing and remove extra spaces
+    Normalizes a name into proper case with single spaces.
+    Example: "  jOhN   doE " -> "John Doe"
+    Returns "" if input is empty/whitespace.
+"""
+def normalize_name(name):
+  
+    name = collapse_spaces(name)
+    if not name:
+        return ""
+    return " ".join(part.capitalize() for part in name.split(" "))
+
+
+def normalize_subject(subject):
+    """
+    Normalizes subject casing and spacing.
+    Example: "  mAtH  " -> "Math"
+    Returns "" if input is empty/whitespace.
+    """
+    subject = collapse_spaces(subject)
+    if not subject:
+        return ""
+    return " ".join(word.capitalize() for word in subject.split(" "))
+
+
+def normalize_fields(parsed_fields):
+    """
+    Takes [name, subject, marks, year] (all strings) and normalizes text fields.
+    Marks/year are only space-collapsed here (no type conversion yet).
+    Returns a list of 4 strings.
+    """
+    name, subject, marks, year = parsed_fields
+
+    name = normalize_name(name)
+    subject = normalize_subject(subject)
+
+    # Keep marks/year as strings for now; just collapse spaces
+    marks = collapse_spaces(marks)
+    year = collapse_spaces(year)
+
+    return [name, subject, marks, year]
