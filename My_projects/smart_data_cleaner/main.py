@@ -111,3 +111,84 @@ def normalize_fields(parsed_fields):
     year = collapse_spaces(year)
 
     return [name, subject, marks, year]
+"""
+CARD 3:
+    Splits a full name into (first_name, last_name).
+    Assumption: name is 'First Last'. If missing parts -> 'Unknown'.
+    """
+
+def split_name(full_name):
+    
+    full_name = collapse_spaces(full_name)
+
+    if not full_name:
+        return "Unknown", "Unknown"
+
+    parts = full_name.split()
+
+    first = parts[0].capitalize() if parts[0] else "Unknown"
+    last = parts[1].capitalize() if len(parts) > 1 and parts[1] else "Unknown"
+
+    return first, last
+
+
+def clean_marks(marks_text):
+    """
+    Converts marks to float and rounds to 2 decimals.
+    Missing/invalid -> 0.0
+    """
+    marks_text = collapse_spaces(marks_text)
+
+    if not marks_text:
+        return 0.0
+
+    try:
+        return round(float(marks_text), 2)
+    except ValueError:
+        return 0.0
+
+
+def clean_year(year_text):
+    """
+    Converts year to int if possible.
+    Missing/invalid -> 'Unknown'
+    """
+    year_text = collapse_spaces(year_text)
+
+    if not year_text:
+        return "Unknown"
+
+    try:
+        return int(year_text)
+    except ValueError:
+        return "Unknown"
+
+
+def apply_defaults(normalized_fields):
+    """
+    Takes normalized fields [name, subject, marks, year] and applies:
+    - Name split + Unknown defaults
+    - Subject default
+    - Marks conversion + default
+    - Year conversion + default
+
+    Returns a structured dict ready for next steps.
+    """
+    name, subject, marks, year = normalized_fields
+
+    first_name, last_name = split_name(name)
+
+    subject = normalize_subject(subject)
+    if not subject:
+        subject = "Unknown"
+
+    marks = clean_marks(marks)
+    year = clean_year(year)
+
+    return {
+        "First_Name": first_name,
+        "Last_Name": last_name,
+        "Subject": subject,
+        "Marks": marks,
+        "Year": year,
+    }
