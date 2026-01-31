@@ -192,3 +192,25 @@ def apply_defaults(normalized_fields):
         "Marks": marks,
         "Year": year,
     }
+"""
+    Card 4: Remove duplicate records after normalization
+    Removes duplicate student records.
+
+    A duplicate is defined as having the same:
+    First_Name, Last_Name, Subject, Marks, Year
+
+    Keeps the first occurrence (stable order).
+    """
+
+def deduplicate_records(records):
+   
+    seen = set()
+    unique = []
+
+    for r in records:
+        key = (r["First_Name"], r["Last_Name"], r["Subject"], r["Marks"], r["Year"])
+        if key not in seen:
+            seen.add(key)
+            unique.append(r)
+
+    return unique
