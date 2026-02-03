@@ -236,3 +236,23 @@ def sort_records(records):
         return (first, year_key)
 
     return sorted(records, key=sort_key)
+
+
+# CARD 6. Assign sequential roll numbers
+
+def assign_roll_numbers(records):
+    """
+    Assigns sequential roll numbers to sorted records.
+    Roll numbers start from 1 and increase by 1.
+
+    Returns a NEW list of records (does not modify input list).
+    """
+    result = []
+
+    for idx, r in enumerate(records, start=1):
+        new_r = r.copy()
+        new_r["Roll_No"] = idx
+        result.append(new_r)
+
+    return result
+
