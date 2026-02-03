@@ -256,3 +256,43 @@ def assign_roll_numbers(records):
 
     return result
 
+# CARD 7  Generate cleaned output format
+
+def format_marks(marks):
+    """
+    Formats marks to exactly 2 decimal places as a string.
+    Example: 85 -> "85.00", 91.5 -> "91.50"
+    """
+    try:
+        return f"{float(marks):.2f}"
+    except (TypeError, ValueError):
+        return "0.00"
+def make_output_row(record):
+    """
+    Maps internal record dict into the final output schema (as a list of strings)
+    Order:
+    First_Name, Last_Name, Roll_No, Subject, Marks, Result, Year
+    """
+    first_name = str(record.get("First_Name", "Unknown"))
+    last_name  = str(record.get("Last_Name", "Unknown"))
+    roll_no    = record.get("Roll_No", "")
+    subject    = str(record.get("Subject", "Unknown"))
+    marks      = format_marks(record.get("Marks", 0.0))
+    result     = str(record.get("Result", ""))  # derive in another card or fill now
+    year       = record.get("Year", "Unknown")
+
+    # Ensure Roll_No is written as int-like string
+    try:
+        roll_no = str(int(roll_no))
+    except (TypeError, ValueError):
+        roll_no = ""
+
+    # Year can be int or "Unknown"
+    if isinstance(year, int):
+        year = str(year)
+    else:
+        year = "Unknown"
+
+    return [first_name, last_name, roll_no, subject, marks, result, year]
+def output_header():
+    return ["First_Name", "Last_Name", "Roll_No", "Subject", "Marks", "Result", "Year"]
