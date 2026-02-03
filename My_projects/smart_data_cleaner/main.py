@@ -214,3 +214,25 @@ def deduplicate_records(records):
             unique.append(r)
 
     return unique
+
+ # CARD 5 : Sort records by First_Name and Year
+ 
+ 
+def sort_records(records):
+    """
+    Sorts records by:
+    1) First_Name (alphabetical ascending)
+    2) Year (numerical ascending)
+
+    Handles Year == "Unknown" safely by placing it at the end.
+    """
+    def sort_key(r):
+        first = r["First_Name"]
+
+        year = r["Year"]
+        # Put unknown years at the end by using a big number
+        year_key = year if isinstance(year, int) else 9999
+
+        return (first, year_key)
+
+    return sorted(records, key=sort_key)
