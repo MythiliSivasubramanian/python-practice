@@ -296,3 +296,41 @@ def make_output_row(record):
     return [first_name, last_name, roll_no, subject, marks, result, year]
 def output_header():
     return ["First_Name", "Last_Name", "Roll_No", "Subject", "Marks", "Result", "Year"]
+
+
+"""
+Card 8:
+Derive Result from Marks
+Compute the Result field based on business rules.
+
+Scope of this task:
+
+   If Marks > 60 → Pass
+   If Marks ≤ 60 → Fail
+Apply after marks are cleaned and normalized
+"""
+
+def derive_result(record):
+    """
+    Adds/updates the Result field based on Marks.
+
+    Business Rule:
+    Marks > 60  -> Pass
+    Marks <= 60 -> Fail
+    """
+    marks = record.get("Marks", 0.0)
+
+    try:
+        marks = float(marks)
+    except (TypeError, ValueError):
+        marks = 0.0
+
+    record["Result"] = "Pass" if marks > 60 else "Fail"
+
+    return record
+
+def apply_result(records):
+    """
+    Applies result derivation to all records.
+    """
+    return [derive_result(r) for r in records]
