@@ -5,6 +5,7 @@
     - Returns a list of raw record strings for further parsing
     - Error message when file not found or other issues
 """
+from pathlib import Path
 
 
 def read_raw_file(file_path):
@@ -12,7 +13,7 @@ def read_raw_file(file_path):
 
 # Open and safely read the file line by line
     try:
-        with open(file_path, "r") as f:
+        with open(file_path, "r", encoding="utf-8") as f:
             for line in f: # streaming (Not to load entire file into memory)
                 cleaned_line = line.strip()
                 if cleaned_line:          # skip empty lines
@@ -336,3 +337,96 @@ def apply_result(records):
     Applies result derivation to all records.
     """
     return [derive_result(r) for r in records]
+
+# Card 9 Write cleaned data to cleaned_data.txt
+"""
+Implement logic to write all processed records into cleaned_data.txt in the defined output format.
+
+Scope of this task:
+
+Create or overwrite the output file
+Write a header row
+Write one cleaned record per line
+Ensure file is always generated, even with partial data
+
+"""
+
+def write_cleaned_file(output_path, records):
+    """
+    Writes cleaned student records to a text file.
+
+    - Creates or overwrites the file
+    - Writes a header row
+    - Writes one record per line
+    - Always generates a file (even if records is empty)
+    """
+    header = output_header()
+
+    try:
+        with open(output_path, "w", encoding="utf-8") as f:
+            # Header
+            f.write(",".join(header) + "\n")
+
+            # Data rows
+            for r in records:
+                row = make_output_row(r)          # list of strings in correct order
+                f.write(",".join(row) + "\n")
+
+    except Exception as e:
+        print(f"Error while writing output file: {e}")
+
+def main():
+    """
+    Runs the full Smart Data Cleaner pipeline end-to-end.
+    Handles file paths relative to this script location.
+    """
+
+    # Base directory where main.py exists
+    base_dir = Path(__file__).parent
+
+    # Input / Output paths
+    input_path = base_dir / "raw_data.txt"
+    output_path = base_dir / "cleaned_data.txt"
+
+    print(f"Reading from: {input_path}")
+
+    # 1) Read raw lines
+    raw_lines = read_raw_file(input_path)
+
+    # 2) Parse + normalize
+    parsed = [parse_record(line) for line in raw_lines]
+    normalized = [normalize_fields(fields) for fields in parsed]
+
+    # 3) Apply defaults + type conversion
+    structured = [apply_defaults(fields) for fields in normalized]
+
+    # 4) Remove duplicates
+    unique_records = deduplicate_records(structured)
+
+    # 5) Sort records
+    sorted_records = sort_records(unique_records)
+
+    # 6) Assign roll numbers
+    rolled_records = assign_roll_numbers(sorted_records)
+
+    # 7) Derive result
+    final_records = apply_result(rolled_records)
+
+    print("Total raw lines:", len(raw_lines))
+    print("Total after dedup:", len(unique_records))
+    print("Output rows:", len(final_records))
+    
+    pass_count = sum(1 for r in final_records if r["Result"] == "Pass")
+    fail_count = len(final_records) - pass_count
+    print("Pass:", pass_count, "Fail:", fail_count)
+    
+    # 8) Write output file
+    write_cleaned_file(output_path, final_records)
+    
+
+    print(f"Saved cleaned output to: {output_path}")
+
+
+# Standard Python entry point
+if __name__ == "__main__":
+    main()
