@@ -19,12 +19,12 @@ NiLS medhurst,English,,
 AnneTta Heaney-ondricka,English,44,2017
 Lawrence Larson,Maths,6,2014
 Renee Pfeffer,Maths,74,2008
-Vince Murazik,History,73,2020
-Elody   Bechtelar ,english ,95,
-Elda Luettgen,Science,41,2013
-Jadon   Leannon  , Science,91,2019
-Lawrence lArson,Maths,6,2014
-Nora Kuhic,Maths,49,2019
+barry jacobs,History,20,2011
+Garnet Volkman,Maths,85,
+blake   streich,Maths,86,2020
+Vincent Reinger,History,65,2020
+Russ Ferry,English,25,2014
+Daisha Hartmann,Maths,28,2013
 Maximillian Pouros,English,97,2012
 Ethel Steuber,History,40,2015
 MurPhy PARker,   HIStory,44,2009
@@ -35,29 +35,28 @@ Jeramy Schmidt,English,75,2009
 Linnea Bogan,History,73,2019
 Alivia    Smith,English   ,80,      2005
 Christelle Bauch,English,37,2016
-Darrick Gleason-Muller,Science,22,2017
-Pearl Wolf,English,58,2009
-Christina Skiles,Maths,97,2012
-Audra VonRueden,English,1,2008
-Bell Herman,English,64,2013
-Freeman Osinski,History,40,2013
-Sister Lynch,Science,27,2007
-Alana    Reichert.  ,HiStory,34,     2019
-Mariela Bednar,Maths,57,2002
-Lesley Lakin,Maths,80,2001
+Ethel Steuber,History,40,2015
+MurPhy PARker,   HIStory,44,2009
+Maribel Lind,Maths,29,2020
+Heloise Lueilwitz,English,90,2001
+Stephania Donnelly-King,Science,53,2020
+Jeramy Schmidt,English,75,2009
+Linnea Bogan,History,73,2019
+Alivia    Smith,English   ,80,      2005
+Christelle Bauch,English,37,2016
 Cassidy Torp,Maths,88,2005
 Stefan Borer,English,72,2003
 Caleigh   ,MaTHS,89    ,2017
 Ethel Steuber,History,,
-Joan Koch,English,59,2019
-Frederik Ziemann,Maths,83,2002
-Ashton Bogisich,History,20,2005
-Brayan Senger,Science,65,2016
-Kirsten Beier-Hane,Science,61,2010
-Norma Effertz,English,97,2014
-Gianni Ferry,Maths,30,2017
-Brayan   ,Science,65,2016
-Pink Heller,Science,48,2008
+Ethel Steuber,History,40,2015
+MurPhy PARker,   HIStory,44,2009
+Maribel Lind,Maths,29,2020
+Heloise Lueilwitz,English,90,2001
+Stephania Donnelly-King,Science,53,2020
+Jeramy Schmidt,English,75,2009
+Linnea Bogan,History,73,2019
+Alivia    Smith,English   ,80,      2005
+Christelle Bauch,English,37,2016
 Madelynn   Torphy,           History,61,2013
 Nicklaus Casper,Science,51,2012
 Saige Hudson,English,86,2014
@@ -67,15 +66,15 @@ Karley Langosh,Science,71,2004
 Brenna Conn,English,100,2001
 Elliott Marquardt,English,21,2007
 Kade Purdy,English,4,2017
-Amina Nikolaus,English,58,2015
-Bertha McClure,English,41,2010
-Brent Senger,English,30,2013
-Hazel Botsford,Maths,34,2018
-Terrell Bahringer,English,93,2018
-Frederique Brakus,Maths,44,2013
-Dayne Rowe,History,70,2018
-Nova Heller,English,30,2005
-Paige Runolfsdottir-Kovacek,English,10,2006
+Ethel Steuber,History,40,2015
+MurPhy PARker,   HIStory,44,2009
+Maribel Lind,Maths,29,2020
+Heloise Lueilwitz,English,90,2001
+Stephania Donnelly-King,Science,53,2020
+Jeramy Schmidt,English,75,2009
+Linnea Bogan,History,73,2019
+Alivia    Smith,English   ,80,      2005
+Christelle Bauch,English,37,2016
 Bridgette Larson,English,58,2009
 Ryleigh Koss,Maths,45,2007
 Lyric Farrell-Runte,Maths,5,2004
@@ -117,9 +116,15 @@ SARAH    Fritsch,   History,38,2019
 Gudrun Wisoky,Maths,78,2018
 Loyce     Macejkovic,  HISTORZ,65,2007
 Jerad Pfannerstill,English,12,2004
-Marvin Kozey,Science,79,2001
-Nathanael Rice,Science,5,2020
-Elmer Heaney,History,48,2011
+Ethel Steuber,History,40,2015
+MurPhy PARker,   HIStory,44,2009
+Maribel Lind,Maths,29,2020
+Heloise Lueilwitz,English,90,2001
+Stephania Donnelly-King,Science,53,2020
+Jeramy Schmidt,English,75,2009
+Linnea Bogan,History,73,2019
+Alivia    Smith,English   ,80,      2005
+Christelle Bauch,English,37,2016
 Bailey McCullough,Science,22,2007
 Darby Frami,Maths,66,2007
 Samson,History,25,2006
@@ -158,9 +163,16 @@ Mary Wintheiser,Science,71,2006
 Kathleen Quigley,History,76,2017
 Faye Bailey,English,81,2005
 Marion RICE,Maths,20,
-Lempi Bruen,Maths,57,2017
-Loyce Wehner,History,85,2015
-Bette Reichert,History,69,2014
+Cristobal Johns,History,57,2015
+Marion Rice,Maths,20,2019
+Greyson Wolf,History,85,2002
+Lou Hodkiewicz,Science,61,2007
+Grant,Science,62,2020
+Gus Mitchell,History,8,2020
+Francis Rice,History,37,2008
+Jordy Veum,History,26,2006
+Celine Gleason,Science,83,2015
+Stephen Swift,English,59,2013
 Juliana Zulauf,Science,36,2006
 Winifred Krajcik,Science,5,2003
 Abby Wolff,History,17,2016
@@ -194,7 +206,16 @@ Golden Anderson,English,10,2014
 Julie Dicki,English,53,2009
 Edd Will,History,72,2012
 Veronica Williamson,,90,2001
-Chauncey Koepp,Maths,29,2006
+Cristobal Johns,History,57,2015
+Marion Rice,Maths,20,2019
+Greyson Wolf,History,85,2002
+Lou Hodkiewicz,Science,61,2007
+Grant,Science,62,2020
+Gus Mitchell,History,8,2020
+Francis Rice,History,37,2008
+Jordy Veum,History,26,2006
+Celine Gleason,Science,83,2015
+Stephen Swift,English,59,2013
 Marianna Dooley,English,29,2001
 Wayne O&#x27;Hara,History,20,2017
 Bonita Brekke,English,75,2020
@@ -217,25 +238,34 @@ Casimir Kessler,Science,63,2007
 Federico Sawayn,English,4,2016
 Botsford,Maths,57,2013
 Erika Lind,Maths,33,2014
-Abbey Stroman,Maths,91,2011
+Cristobal Johns,History,57,2015
+Marion Rice,Maths,20,2019
+Greyson Wolf,History,85,2002
+Lou Hodkiewicz,Science,61,2007
+Grant,Science,62,2020
+Gus Mitchell,History,8,2020
+Francis Rice,History,37,2008
+Jordy Veum,History,26,2006
+Celine Gleason,Science,83,2015
+Stephen Swift,English,59,2013
 Brian Halvorson,Science,18,2003
 Al King,Science,20,2011
 Chad Weissnat-Jast,English,22,2013
 Pierce Langworth,,46,2002
 Annabelle Watsica,Maths,67,2002
-Burley Wiegand,English,82,2004
+Burley sd,English,82,2004
 Maud Ondricka,Science,75,2016
 Delta Wisoky,Science,91,
 Micheal Stark,Maths,56,2003
 Lera Hand,Maths,77,2004
 Steve Muller,Science,39,2015
-Jose Konopelski,English,25,2004
-Desmond Rowe,Maths,8,2001
+Jose Konopelski,engLISH,25,2004
+Desmond Rowe,Maths,8,
 Muhammad Stoltenberg,Science,55,2009
 Dion Kunde,English,82,2015
 Leila Hackett,Maths,58,2012
 Irving Bergstrom,History,23,2009
-Clint Bode,Science,34,2007
+Clint Bode,Science,34,
 Cristopher O&#x27;Keefe,English,94,2008
 Amiya Legros,Maths,79,2019
 Salvatore Crooks,Science,62,2014
