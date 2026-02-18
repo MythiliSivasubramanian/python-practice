@@ -12,18 +12,23 @@ This repository contains all the Python programs I’ve written while learning s
 
 | Folder | Description |
 |---------|-------------|
-| `Basics` | Basic input/output, variables, and simple math. |
-| `IfElse` | Conditional statements — learning `if`, `elif`, and `else`. |
-| `Dictionaries` |  Creation — Adding / Updating elements, Accessing Elements — Deleting - Fundamentals, Copying, nested dictionaries, Adavntages, disadvantages  |
-| `Loops` |  Practice with `for` and `while` loops. |
-| `Lists` |  Working with lists — adding, removing, and iterating through items. |
-| `Functions` |  Creating reusable functions with parameters and return values. |
-| `Memory_Logic` |  Understanding various methods and functions on Strings |
-| `Sets` |  Fundamentals | Set Operations  | Set comprehensions  | Frozenset (immutable sets)  | Performance comparisons (list vs set)  |
-| `String_Practice` |  Understanding variable references, copies, and how Python stores data in memory. |
-| `String_List` |  Pratcie problems on various String and List datatypes. |
-| `Projects` |  Mini projects combining multiple Python concepts (calculators, analyzers, etc.). |
-| `Utility_Scripts` |  Various small programs on multiple Python ultilities . |
+| `01_Basics`                 | Basic input/output, variables, data types, type casting, and simple math operations.                                                   |
+| `02_IfElse`                 | Conditional statements — learning `if`, `elif`, `else`, nested conditions, and logical operators.                                      |
+| `03_Loops`                  | Practice with `for` and `while` loops, nested loops, `break`, `continue`, and loop patterns.                                           |
+| `04_Functions`              | Creating reusable functions with parameters, return values, default arguments, recursion, and lambda basics.                           |
+| `05_Lists`                  | Working with lists — indexing, slicing, adding, removing, sorting, copying, nested lists, and list comprehensions.                     |
+| `06_Dictionaries`           | Creation, adding/updating elements, accessing & deleting, looping, copying, nested dictionaries, advantages & disadvantages.           |
+| `07_Sets`                   | Fundamentals, set operations (union, intersection, difference), set comprehensions, `frozenset`, performance comparison (list vs set). |
+| `08_Strings`                | String operations, slicing, methods, immutability, memory references, formatting, and practice problems on string & list logic.        |
+| `09_File_Handling`          | File open modes, reading methods, writing/appending, CSV handling, JSON basics, and log/text processing scripts.                       |
+| `10_Exception_Handling`     | Error handling using `try`, `except`, `else`, `finally`, multiple exceptions, and custom exceptions.                                   |
+| `11_Modules_Packages`       | Importing modules, creating custom modules, `__name__ == "__main__"`, package structure, and code reuse.                               |
+| `12_OOP`                    | Object-Oriented Programming — classes, objects, constructors, inheritance, polymorphism, encapsulation, abstraction.                   |
+| `13_Iterators_Generators`   | Iterators, `__iter__`, `__next__`, generators, `yield`, and memory-efficient looping.                                                  |
+| `14_Functional_Programming` | Lambda functions, `map`, `filter`, `reduce`, and functional coding patterns.                                                           |
+| `15_Utility_Scripts`        | Small automation tools — file renamers, log cleaners, password generators, etc.                                                        |
+| `16_Mini_Projects`          | Mini projects combining multiple Python concepts (calculators, analyzers, automation tools, etc.).                                     |
+
 
 
 
